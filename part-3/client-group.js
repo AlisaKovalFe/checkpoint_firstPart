@@ -1,3 +1,9 @@
 module.exports = class ClientGroup {
-  constructor() {}
+  constructor(clients) {
+    this.clients = [...clients]
+  }
+
+  getFios() {
+
+  }
 };

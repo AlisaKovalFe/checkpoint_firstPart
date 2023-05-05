@@ -1,3 +1,6 @@
 module.exports = class Stuffing {
-  constructor() {}
+  constructor(name, weight) {
+    this.name = name,
+      this.weight = weight
+  }
 };
