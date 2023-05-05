@@ -1,8 +1,9 @@
 const Stuffing = require('./stuffing')
 module.exports = class Doughnut extends Stuffing {
-  constructor({ name: name }, baseWeight) {
+  constructor({ name: name }, stuffings) {
     super(name)
-    this.name = name
-    this.baseWeight = baseWeight
+    this.stuffings = stuffings
+
   }
+
 };
