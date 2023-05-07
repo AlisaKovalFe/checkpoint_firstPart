@@ -1,12 +1,8 @@
-const Client = require('./client');
+const Person = require('./person');
 
-module.exports = class Salesman extends Client {
-  constructor(firstName, lastName, middleName, phone, hireDate) {
+module.exports = class Salesman extends Person {
+  constructor(firstName, lastName, middleName, phone, hireDate = new Date()) {
     super(firstName, lastName, middleName, phone)
     this.hireDate = hireDate
-  }
-
-  getFio() {
-    super.getFio()
   }
 };
